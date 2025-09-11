@@ -1,0 +1,48 @@
+/* General Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #0d1117; color: #e6edf3; }
+
+/* Navbar */
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  background: #161b22; padding: 1rem 2rem; position: sticky; top: 0;
+}
+.logo { font-size: 1.5rem; font-weight: bold; color: #00ffcc; }
+.nav-links { list-style: none; display: flex; gap: 1.5rem; }
+.nav-links a { text-decoration: none; color: #e6edf3; transition: 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: #00ffcc; }
+
+/* Hero Section */
+.hero {
+  height: 90vh; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, #0d1117, #1f2937);
+  text-align: center; padding: 2rem;
+}
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; color: #00ffcc; }
+.hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+.btn {
+  background: #00ffcc; color: #0d1117; padding: 0.75rem 1.5rem;
+  border-radius: 8px; font-weight: bold; text-decoration: none; transition: 0.3s;
+}
+.btn:hover { background: #00ccaa; }
+
+/* Services / About / Contact */
+.page-header { text-align: center; padding: 3rem 1rem; }
+.services, .about, .contact {
+  padding: 2rem; display: grid; gap: 2rem; max-width: 1000px; margin: auto;
+}
+.service-card {
+  background: #161b22; padding: 2rem; border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); transition: 0.3s;
+}
+.service-card:hover { transform: translateY(-5px); border-left: 4px solid #00ffcc; }
+
+/* Contact Form */
+form { display: flex; flex-direction: column; gap: 1rem; }
+input, textarea {
+  padding: 0.75rem; border: none; border-radius: 6px; font-size: 1rem;
+}
+button { cursor: pointer; }
+
+/* Footer */
+footer { text-align: center; padding: 1.5rem; background: #161b22; margin-top: 2rem; }
