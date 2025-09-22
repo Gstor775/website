@@ -81,3 +81,8 @@ footer { text-align: center; padding: 1.5rem; background: #161b22; margin-top: 2
   border: 2px solid #00ffcc;
   background: #0d1117;
 }
+
+#form-status {
+  margin-top: 1rem;
+  font-weight: bold;
+}
