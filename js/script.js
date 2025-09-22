@@ -1,11 +1,31 @@
-// Contact form handler (placeholder - can be connected to backend)
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
+  const statusDiv = document.getElementById("form-status");
+
   if (form) {
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      alert("Thank you for contacting Gator Tech Den! We'll get back to you soon.");
-      form.reset();
+      const data = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { Accept: "application/json" }
+        });
+
+        if (response.ok) {
+          statusDiv.textContent = "✅ Thank you! Your message has been sent.";
+          statusDiv.style.color = "#00ffcc";
+          form.reset();
+        } else {
+          statusDiv.textContent = "❌ Oops! There was a problem sending your message.";
+          statusDiv.style.color = "red";
+        }
+      } catch (error) {
+        statusDiv.textContent = "❌ Network error. Please try again later.";
+        statusDiv.style.color = "red";
+      }
     });
   }
 });
