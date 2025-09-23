@@ -88,7 +88,7 @@ footer { text-align: center; padding: 1.5rem; background: #161b22; margin-top: 2
 }
 
 .logo img {
-  height: 50px;   /* Adjust size as needed */
+  height: 80px;   /* Adjust size as needed */
   width: auto;
   vertical-align: middle;
 }
@@ -139,3 +139,4 @@ nav ul {
     text-align: center;
   }
 }
+
