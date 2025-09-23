@@ -107,3 +107,35 @@ nav ul {
   height: 40px;
   margin-bottom: 10px;
 }
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* lets them wrap instead of overlap */
+  gap: 10px;       /* space between buttons */
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  background: #00ffcc;
+  color: #000;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #00ccaa;
+}
+
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column;  /* stack them */
+    align-items: center;     /* center align */
+  }
+  .btn {
+    width: 80%; /* make buttons fill nicely */
+    text-align: center;
+  }
+}
