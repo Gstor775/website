@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gator Tech Den - Computer Repair</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Fast, reliable computer repair, upgrades, and IT support in Waco, TX. Onsite pickup/drop-off available." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gator Tech Den - Computer Repair in Waco, TX" />
+  <meta property="og:description" content="Fast, reliable computer repair, upgrades, and IT support in Waco, TX. Onsite pickup/drop-off available." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.gator-techden.com/" />
+  <meta property="og:image" content="https://www.gator-techden.com/assets/images/logo.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
   <script src="js/script.js" defer></script>
 
   <!-- SEO Structured Data (JSON-LD for LocalBusiness) -->
@@ -16,8 +25,8 @@
     "image": "https://www.gator-techden.com/assets/images/logo.png",
     "@id": "https://www.gator-techden.com/",
     "url": "https://www.gator-techden.com/",
-    "telephone": "",
-    "email": "",
+    "telephone": "",        /* <-- replace with e.g. +1-254-555-0123 */
+    "email": "",            /* <-- replace with e.g. support@gator-techden.com */
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "6801 Sanger Ave",
@@ -64,42 +73,54 @@
   }
   </script>
 </head>
+
 <body>
   <header>
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="logo">
-        <img src="assets/images/logo.png" alt="Gator Tech Den Logo">
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <a href="index.html" aria-label="Gator Tech Den home">
+          <img src="assets/images/logo.png" alt="Gator Tech Den Logo" />
+        </a>
+      </div>
+
+      <ul class="nav-links" role="menubar" aria-label="Primary">
+        <li role="none"><a role="menuitem" href="index.html" class="active">Home</a></li>
+        <li role="none"><a role="menuitem" href="about.html">About</a></li>
+        <li role="none"><a role="menuitem" href="services.html">Services</a></li>
+        <li role="none"><a role="menuitem" href="pricing.html">Pricing</a></li>
+        <li role="none"><a role="menuitem" href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-  <div class="hero-content">
-    <h1>Welcome to Gator Tech Den</h1>
-    <p>A trusted source for computer repair, upgrades, and IT solutions in the Waco area.</p>
-    <a href="services.html" class="btn">Explore Our Services</a>
-    <a href="pricing.html" class="btn">View Pricing Estimates</a>
-    <a href="contact.html" class="btn">Contact Us</a>
-    
-  </div>
-</section>
-<section class="intro">
-  <h2>Why Choose Gator Tech Den?</h2>
-  <p>We combine years of experience with modern solutions to get your devices running like new. 
-     Whether it’s a slow laptop, a gaming PC upgrade, or a virus issue, we’re here to help. 
-     No problem is too big or too small.</p>
-</section>
+  <main>
+    <section class="hero" aria-label="Welcome section">
+      <div class="hero-content">
+        <h1>Welcome to Gator Tech Den</h1>
+        <p>A trusted source for computer repair, upgrades, and IT solutions in the Waco area.</p>
+
+        <!-- Buttons wrapped in .button-group for responsive layout -->
+        <div class="button-group" role="group" aria-label="Primary actions">
+          <a href="services.html" class="btn">Explore Our Services</a>
+          <a href="pricing.html" class="btn">View Pricing Estimates</a>
+          <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <h2>Why Choose Gator Tech Den?</h2>
+      <p>We combine years of experience with modern solutions to get your devices running like new.
+         Whether it’s a slow laptop, a gaming PC upgrade, or a virus issue, we’re here to help.
+         No problem is too big or too small.</p>
+    </section>
+  </main>
 
   <footer>
-    <img src="assets/images/logo.png" alt="Gator Tech Den Logo" class="footer-logo">
+    <img src="assets/images/logo.png" alt="Gator Tech Den Logo" class="footer-logo" />
     <p>&copy; 2025 Gator Tech Den. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
 
