@@ -15,7 +15,7 @@ body { font-family: Arial, sans-serif; background: #0d1117; color: #e6edf3; -web
   z-index: 50;
 }
 .logo { font-size: 1.5rem; font-weight: bold; color: #00ffcc; display:flex; align-items:center; gap:0.5rem; }
-.logo img { height: 200px; width: auto; display:block; }
+.logo img { height: 100px; width: auto; display:block; }
 .nav-links { list-style: none; display: flex; gap: 1rem; align-items:center; margin-left:auto; }
 .nav-links a { text-decoration: none; color: #e6edf3; transition: color 0.25s ease; padding: 0.35rem 0.6rem; border-radius:6px; }
 .nav-links a:hover, .nav-links a.active { color: #0d1117; background: #00ffcc; }
@@ -143,5 +143,6 @@ footer { text-align: center; padding: 1.5rem; background: #161b22; margin-top: 2
   .button-group .btn { width: 92%; max-width: 420px; min-width: 0; }
   .nav-links { display: none; } /* optional: hide nav links on tiny screens if you want a mobile menu later */
 }
+
 
 
