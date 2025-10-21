@@ -1,12 +1,28 @@
 User-agent: *
+# robots.txt for https://www.gator-techden.com/
+# This file helps search engines crawl your site efficiently.
+
+User-agent: *
 Allow: /
-
-# Disallow raw asset directories from indexing
-Disallow: /assets/docs/
+Disallow: /js/
+Disallow: /css/
 Disallow: /assets/temp/
-Disallow: /backups/
+Disallow: /private/
 
-# Leave CSS, JS, and images accessible for rendering
-# (Google needs them to fully "see" your site layout)
-
+# Important SEO files
 Sitemap: https://www.gator-techden.com/sitemap.xml
+
+# Crawl-delay helps prevent overloading your server (safe value for GitHub Pages)
+Crawl-delay: 5
+
+# Targeted pages to prioritize indexing
+Allow: /index.html
+Allow: /services.html
+Allow: /about.html
+Allow: /pricing.html
+Allow: /contact.html
+
+# Prevent indexing of duplicate or test pages (if any exist later)
+Disallow: /*.bak$
+Disallow: /*.tmp$
+Disallow: /*.test.html$
